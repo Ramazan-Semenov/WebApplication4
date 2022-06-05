@@ -5,6 +5,7 @@ namespace WebApplication4.Migrations
 {
     public partial class MigrationName : Migration
     {
+        //e
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
