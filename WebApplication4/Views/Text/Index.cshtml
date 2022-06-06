@@ -1,4 +1,4 @@
-﻿@model IEnumerable<WebApplication4.Models.ServiceItems>
+﻿@model IEnumerable<WebApplication4.Models.TextFields>
 
 @{ ViewData["Title"] = "Index"; }
 
@@ -10,6 +10,9 @@
 <table class="table">
     <thead>
         <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.CodeWord)
+            </th>
             <th>
                 @Html.DisplayNameFor(model => model.Title)
             </th>
@@ -45,6 +48,9 @@
         {
         <tr>
             <td>
+                @Html.DisplayFor(modelItem => item.CodeWord)
+            </td>
+        <td>
                 @Html.DisplayFor(modelItem => item.Title)
             </td>
             <td>

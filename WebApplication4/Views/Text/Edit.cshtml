@@ -1,8 +1,12 @@
-﻿@model WebApplication4.Models.ServiceItems
+﻿@model WebApplication4.Models.TextFields
 @{
+    ViewBag.Title = "Редактирование пользователя";
 }
-<form asp-action="create" asp-controller="ServiceItems">
+<form asp-action="edit" asp-controller="Text" asp-route-id="@Model">
     <div class="form-group">
+        <label asp-for="CodeWord" class="control-label">CodeWord</label>
+        <input type="text" asp-for="CodeWord" class="form-control" />
+    </div> <div class="form-group">
         <label asp-for="Title" class="control-label">Название страницы(заголовок)</label>
         <input type="text" asp-for="Title" class="form-control" />
     </div>
@@ -36,8 +40,7 @@
         <label asp-for="DateAdded" class="control-label">DateAdded</label>
         <input type="text" asp-for="DateAdded" class="form-control" />
     </div>
-
     <div class="form-group">
-        <input type="submit" value="Отправить" class="btn btn-default" />
+        <input type="submit" value="Сохранить" class="btn btn-default" />
     </div>
 </form>

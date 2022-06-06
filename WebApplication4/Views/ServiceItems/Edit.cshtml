@@ -3,14 +3,46 @@
     ViewBag.Title = "Редактирование пользователя";
 }
 <form asp-action="edit" asp-controller="ServiceItems" asp-route-id="@Model">
+  
     <div class="form-group">
-        <label asp-for="MetaDescription" class="control-label">Имя</label>
-        <input type="text" asp-for="MetaDescription" class="form-control" />
+        <label asp-for="Title" class="control-label">Название страницы(заголовок)</label>
+        <input type="text" asp-for="Title" class="form-control" />
     </div>
     <div class="form-group">
-        <label asp-for="MetaTitle" class="control-label">Возраст</label>
+        <label asp-for="Subtitle" class="control-label">Subtitle</label>
+        <input type="text" asp-for="Subtitle" class="form-control" />
+    </div> 
+    <div class="form-group">
+        <label asp-for="Text" class="control-label">Содержание страницы</label>
+        <input type="text" asp-for="Text" class="form-control" />
+    </div> 
+    <div class="form-group">
+        <label asp-for="TitleImagePath" class="control-label">Титульная картинка</label>
+        <input type="text" asp-for="TitleImagePath" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="MetaDescription" class="control-label">SEO метатег Discription</label>
+        <input type="text" asp-for="MetaDescription" class="form-control" />
+    </div> 
+    <div class="form-group">
+        <label asp-for="MetaTitle" class="control-label">SEO метатег Title</label>
         <input type="text" asp-for="MetaTitle" class="form-control" />
     </div>
+
+
+    <div class="form-group">
+        <label asp-for="MetaKeywords" class="control-label">SEO метатег KeyWords</label>
+        <input type="text" asp-for="MetaKeywords" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="DateAdded" class="control-label">DateAdded</label>
+        <input type="text" asp-for="DateAdded" class="form-control" />
+    </div>
+
+
+
+
+
     <div class="form-group">
         <input type="submit" value="Сохранить" class="btn btn-default" />
     </div>

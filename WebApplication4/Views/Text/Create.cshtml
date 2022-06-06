@@ -1,8 +1,12 @@
-﻿@model WebApplication4.Models.ServiceItems
+﻿@model WebApplication4.Models.TextFields
 @{
 }
-<form asp-action="create" asp-controller="ServiceItems">
+<form asp-action="create" asp-controller="Text">
     <div class="form-group">
+        <label asp-for="CodeWord" class="control-label">CodeWord</label>
+        <input type="text" asp-for="CodeWord" class="form-control" />
+    </div
+> <div class="form-group">
         <label asp-for="Title" class="control-label">Название страницы(заголовок)</label>
         <input type="text" asp-for="Title" class="form-control" />
     </div>

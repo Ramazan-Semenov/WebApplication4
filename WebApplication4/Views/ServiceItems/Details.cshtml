@@ -4,10 +4,23 @@
 <h2>Пользователь @Model.MetaDescription</h2>
 <div>
     <dl class="dl-horizontal">
-        <dt>Идентификатор</dt>
+        <dt>ID</dt>
         <dd>@Model.Id</dd>
+        <dt>Название страницы(заголовок)</dt>
+        <dd>@Model.Title</dd>
+        <dt>Информационная страница</dt>
+        <dd>@Model.Subtitle</dd>
+        <dt>Содержание страницы</dt>
+        <dd>@Model.Text</dd>  
+        <dt>Титульная картинка</dt>
+        <dd>@Model.TitleImagePath</dd>
 
-        <dt>Возраст</dt>
+        <dt>SEO метатег Discription</dt>
         <dd>@Model.MetaDescription</dd>
+        <dt>SEO метатег Title</dt>
+        <dd>@Model.MetaTitle</dd> 
+        <dt>SEO метатег KeyWords</dt>
+        <dd>@Model.MetaKeywords</dd> 
+        <dd>@Model.DateAdded</dd>
     </dl>
 </div>

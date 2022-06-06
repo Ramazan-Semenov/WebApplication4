@@ -92,7 +92,9 @@ namespace WebApplication4.Controllers
         public ActionResult Delete(int id)
         {
 
-            return View();
+            ServiceItems model = articlesRepository.ServiceItems.Where(x => x.Id == id).FirstOrDefault<ServiceItems>();
+
+            return View(model);
         }
 
         // POST: ServiceItems/Delete/5
